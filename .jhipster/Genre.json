@@ -1,0 +1,30 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "song",
+            "otherEntityName": "song",
+            "otherEntityRelationshipName": "genre"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "relationshipName": "band",
+            "otherEntityName": "band",
+            "ownerSide": false,
+            "otherEntityRelationshipName": "genre"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20180209174016",
+    "entityTableName": "genre",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false
+}

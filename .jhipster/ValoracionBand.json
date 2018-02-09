@@ -1,0 +1,31 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "band",
+            "otherEntityName": "band",
+            "otherEntityField": "name"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "puntuacion",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "like",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "timestamp",
+            "fieldType": "ZonedDateTime"
+        }
+    ],
+    "changelogDate": "20180209174028",
+    "entityTableName": "valoracion_band",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false
+}
