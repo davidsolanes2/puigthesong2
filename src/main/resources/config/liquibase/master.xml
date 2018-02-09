@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180209174015_added_entity_Country.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180209174016_added_entity_Genre.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180209174017_added_entity_Album.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180209174018_added_entity_Song.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180209174019_added_entity_Artist.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180209174020_added_entity_Band.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180209174021_added_entity_Social.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180209174022_added_entity_Instrument.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180209174023_added_entity_Label.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180209174024_added_entity_UserExt.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180209174025_added_entity_ValoracionAlbum.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180209174026_added_entity_ValoracionSong.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180209174027_added_entity_ValoracionArtist.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180209174028_added_entity_ValoracionBand.xml" relativeToChangelogFile="false"/>
+    <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20180209174017_added_entity_constraints_Album.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180209174018_added_entity_constraints_Song.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180209174019_added_entity_constraints_Artist.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180209174020_added_entity_constraints_Band.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180209174024_added_entity_constraints_UserExt.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180209174025_added_entity_constraints_ValoracionAlbum.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180209174026_added_entity_constraints_ValoracionSong.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180209174027_added_entity_constraints_ValoracionArtist.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180209174028_added_entity_constraints_ValoracionBand.xml" relativeToChangelogFile="false"/>
+    <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
+</databaseChangeLog>

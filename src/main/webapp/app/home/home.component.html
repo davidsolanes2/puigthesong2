@@ -1,0 +1,66 @@
+<div class="row">
+    <div class="col-md-2">
+
+        <p-sidebar [(visible)]="visibleSidebar1" [baseZIndex]="10000">
+            <h3 style="align-content: normal">Menu</h3>
+            <div>
+                <ul  class="" routerLinkActive="active">
+                    <p-accordion>
+                        <p-accordionTab header="Entities">
+                            <li class="nav-item">
+                                <a class="nav-link" routerLink="country">Country</a>
+                            </li>
+                        </p-accordionTab>
+                        <p-accordionTab header="Administration">
+
+                        </p-accordionTab>
+                        <p-accordionTab header="Language">
+
+                        </p-accordionTab>
+                        <p-accordionTab header="Consultas">
+
+                        </p-accordionTab>
+                    </p-accordion>
+                </ul>
+            </div>
+        </p-sidebar>
+        <button pButton type="button" (click)="visibleSidebar1= true" icon="fas fa-align-justify"></button>
+    </div>
+    <div class="col-md-10 image-100">
+        <div [ngSwitch]="isAuthenticated()">
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <h3>Tus Conciertos</h3>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-6">
+                    <p-galleria [images]="images" panelWidth="400" panelHeight="220"></p-galleria>
+                </div>
+                <div class="col-md-6">
+                    <p-galleria [images]="images" panelWidth="400" panelHeight="220"></p-galleria>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <h3>Tus Discos</h3>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-6">
+                    <p-galleria [images]="images" panelWidth="400" panelHeight="220"></p-galleria>
+                </div>
+                <div class="col-md-6">
+                    <p-galleria [images]="images" panelWidth="400" panelHeight="220"></p-galleria>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

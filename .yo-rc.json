@@ -1,0 +1,57 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.puigthesong.app",
+      "nativeLanguage": "en"
+    },
+    "jhipsterVersion": "4.10.1",
+    "baseName": "puigthesong",
+    "packageName": "com.puigthesong.app",
+    "packageFolder": "com/puigthesong/app",
+    "serverPort": "8080",
+    "authenticationType": "session",
+    "hibernateCache": "ehcache",
+    "clusteredHttpSession": false,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSocialSignIn": true,
+    "enableSwaggerCodegen": false,
+    "rememberMeKey": "d628bdc5d11fb3bebd2e15cdcf406f4f9ff21f7a",
+    "clientFramework": "angularX",
+    "useSass": true,
+    "clientPackageManager": "yarn",
+    "applicationType": "monolith",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "otherModules": [
+      {
+        "name": "generator-jhipster-primeng",
+        "version": "2.0.39"
+      },
+      {
+        "name": "generator-jhipster-primeng-entity",
+        "version": "1.0.2"
+      },
+      {
+        "name": "generator-jhipster-primeng-charts",
+        "version": "0.0.3"
+      },
+      {
+        "name": "generator-jhipster-spring-social-connectors",
+        "version": "0.0.1"
+      }
+    ],
+    "enableTranslation": true,
+    "nativeLanguage": "en",
+    "languages": [
+      "en",
+      "es"
+    ]
+  }
+}
