@@ -7307,9 +7307,9 @@ pretty-error@^2.0.2:
     renderkid "^2.0.1"
     utila "~0.4"
 
-primeng-extensions@0.0.40:
-  version "0.0.40"
-  resolved "https://registry.yarnpkg.com/primeng-extensions/-/primeng-extensions-0.0.40.tgz#3d27fbeca0cd44c13270de8c0ffe43a997f0a956"
+primeng-extensions@0.0.41:
+  version "0.0.41"
+  resolved "https://registry.yarnpkg.com/primeng-extensions/-/primeng-extensions-0.0.41.tgz#8e7a75d51e52d9ac2fe255f50b2fea1daeeee036"
 
 primeng@5.2.0:
   version "5.2.0"

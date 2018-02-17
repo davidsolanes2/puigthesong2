@@ -1,9 +1,10 @@
 package com.puigthesong.app.repository;
 
 import com.puigthesong.app.domain.Album;
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import org.springframework.data.jpa.repository.*;
+import java.util.List;
 
 
 /**
@@ -13,4 +14,9 @@ import org.springframework.data.jpa.repository.*;
 @Repository
 public interface AlbumRepository extends JpaRepository<Album, Long> {
 
+    //List<Album> findByBand_NameBand(String bandaNombre);
+    List<Album> findByBand_Name(String nombreBanda);
+
+    //List<Album> findByBand_NameBandContaining(String bandaNombre);
+    List<Album> findByBand_NameContaining(String bandaNombre);
 }

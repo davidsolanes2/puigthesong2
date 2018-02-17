@@ -19,4 +19,6 @@ public interface UserExtRepository extends JpaRepository<UserExt, Long> {
     @Query("select user_ext from UserExt user_ext left join fetch user_ext.albums where user_ext.id =:id")
     UserExt findOneWithEagerRelationships(@Param("id") Long id);
 
+    UserExt findByUserLogin(String Login);
+
 }
