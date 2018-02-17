@@ -36,6 +36,9 @@ public class Country implements Serializable {
     @Column(name = "logitude")
     private Double logitude;
 
+    @Column(name = "iso")
+    private String iso;
+
     @OneToMany(mappedBy = "country")
     @JsonIgnore
     @Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
@@ -105,6 +108,19 @@ public class Country implements Serializable {
 
     public void setLogitude(Double logitude) {
         this.logitude = logitude;
+    }
+
+    public String getIso() {
+        return iso;
+    }
+
+    public Country iso(String iso) {
+        this.iso = iso;
+        return this;
+    }
+
+    public void setIso(String iso) {
+        this.iso = iso;
     }
 
     public Set<Band> getBands() {

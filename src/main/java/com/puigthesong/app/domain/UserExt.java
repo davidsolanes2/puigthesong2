@@ -50,6 +50,9 @@ public class UserExt implements Serializable {
                inverseJoinColumns = @JoinColumn(name="albums_id", referencedColumnName="id"))
     private Set<Album> albums = new HashSet<>();
 
+    @ManyToOne
+    private Country country;
+
     // jhipster-needle-entity-add-field - JHipster will add fields here, do not remove
     public Long getId() {
         return id;
@@ -161,7 +164,22 @@ public class UserExt implements Serializable {
     public void setAlbums(Set<Album> albums) {
         this.albums = albums;
     }
+
+    public Country getCountry() {
+        return country;
+    }
+
+    public UserExt country(Country country) {
+        this.country = country;
+        return this;
+    }
+
+    public void setCountry(Country country) {
+        this.country = country;
+    }
+
     // jhipster-needle-entity-add-getters-setters - JHipster will add getters and setters here, do not remove
+
 
     @Override
     public boolean equals(Object o) {
