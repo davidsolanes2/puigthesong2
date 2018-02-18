@@ -7,6 +7,7 @@ export class Country implements BaseEntity {
         public locationGoogleMaps?: string,
         public latitude?: number,
         public logitude?: number,
+        public iso?: string,
         public bands?: BaseEntity[],
         public artists?: BaseEntity[],
     ) {

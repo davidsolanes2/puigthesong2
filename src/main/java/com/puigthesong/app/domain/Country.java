@@ -202,6 +202,7 @@ public class Country implements Serializable {
             ", locationGoogleMaps='" + getLocationGoogleMaps() + "'" +
             ", latitude='" + getLatitude() + "'" +
             ", logitude='" + getLogitude() + "'" +
+            ", iso='" + getIso() + "'" +
             "}";
     }
 }

@@ -19,6 +19,7 @@
             "locationGoogleMaps": "Location Google Maps",
             "latitude": "Latitude",
             "logitude": "Logitude",
+            "iso": "Iso",
             "band": "Band",
             "artist": "Artist"
         }

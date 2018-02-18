@@ -50,6 +50,9 @@ public class CountryResourceIntTest {
     private static final Double DEFAULT_LOGITUDE = 1D;
     private static final Double UPDATED_LOGITUDE = 2D;
 
+    private static final String DEFAULT_ISO = "AAAAAAAAAA";
+    private static final String UPDATED_ISO = "BBBBBBBBBB";
+
     @Autowired
     private CountryRepository countryRepository;
 
@@ -91,7 +94,8 @@ public class CountryResourceIntTest {
             .name(DEFAULT_NAME)
             .locationGoogleMaps(DEFAULT_LOCATION_GOOGLE_MAPS)
             .latitude(DEFAULT_LATITUDE)
-            .logitude(DEFAULT_LOGITUDE);
+            .logitude(DEFAULT_LOGITUDE)
+            .iso(DEFAULT_ISO);
         return country;
     }
 
@@ -119,6 +123,7 @@ public class CountryResourceIntTest {
         assertThat(testCountry.getLocationGoogleMaps()).isEqualTo(DEFAULT_LOCATION_GOOGLE_MAPS);
         assertThat(testCountry.getLatitude()).isEqualTo(DEFAULT_LATITUDE);
         assertThat(testCountry.getLogitude()).isEqualTo(DEFAULT_LOGITUDE);
+        assertThat(testCountry.getIso()).isEqualTo(DEFAULT_ISO);
     }
 
     @Test
@@ -154,7 +159,8 @@ public class CountryResourceIntTest {
             .andExpect(jsonPath("$.[*].name").value(hasItem(DEFAULT_NAME.toString())))
             .andExpect(jsonPath("$.[*].locationGoogleMaps").value(hasItem(DEFAULT_LOCATION_GOOGLE_MAPS.toString())))
             .andExpect(jsonPath("$.[*].latitude").value(hasItem(DEFAULT_LATITUDE.doubleValue())))
-            .andExpect(jsonPath("$.[*].logitude").value(hasItem(DEFAULT_LOGITUDE.doubleValue())));
+            .andExpect(jsonPath("$.[*].logitude").value(hasItem(DEFAULT_LOGITUDE.doubleValue())))
+            .andExpect(jsonPath("$.[*].iso").value(hasItem(DEFAULT_ISO.toString())));
     }
 
     @Test
@@ -171,7 +177,8 @@ public class CountryResourceIntTest {
             .andExpect(jsonPath("$.name").value(DEFAULT_NAME.toString()))
             .andExpect(jsonPath("$.locationGoogleMaps").value(DEFAULT_LOCATION_GOOGLE_MAPS.toString()))
             .andExpect(jsonPath("$.latitude").value(DEFAULT_LATITUDE.doubleValue()))
-            .andExpect(jsonPath("$.logitude").value(DEFAULT_LOGITUDE.doubleValue()));
+            .andExpect(jsonPath("$.logitude").value(DEFAULT_LOGITUDE.doubleValue()))
+            .andExpect(jsonPath("$.iso").value(DEFAULT_ISO.toString()));
     }
 
     @Test
@@ -195,7 +202,8 @@ public class CountryResourceIntTest {
             .name(UPDATED_NAME)
             .locationGoogleMaps(UPDATED_LOCATION_GOOGLE_MAPS)
             .latitude(UPDATED_LATITUDE)
-            .logitude(UPDATED_LOGITUDE);
+            .logitude(UPDATED_LOGITUDE)
+            .iso(UPDATED_ISO);
 
         restCountryMockMvc.perform(put("/api/countries")
             .contentType(TestUtil.APPLICATION_JSON_UTF8)
@@ -210,6 +218,7 @@ public class CountryResourceIntTest {
         assertThat(testCountry.getLocationGoogleMaps()).isEqualTo(UPDATED_LOCATION_GOOGLE_MAPS);
         assertThat(testCountry.getLatitude()).isEqualTo(UPDATED_LATITUDE);
         assertThat(testCountry.getLogitude()).isEqualTo(UPDATED_LOGITUDE);
+        assertThat(testCountry.getIso()).isEqualTo(UPDATED_ISO);
     }
 
     @Test

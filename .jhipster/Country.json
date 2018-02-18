@@ -30,6 +30,10 @@
         {
             "fieldName": "logitude",
             "fieldType": "Double"
+        },
+        {
+            "fieldName": "iso",
+            "fieldType": "String"
         }
     ],
     "changelogDate": "20180209174015",
