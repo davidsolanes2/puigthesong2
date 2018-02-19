@@ -1,7 +1,6 @@
-<div class="row">
+<div class="row image-10">
     <div class="col-md-2">
-
-        <p-sidebar [(visible)]="visibleSidebar1" [baseZIndex]="10000">
+        <p-sidebar [(visible)]="visibleSidebar1" [baseZIndex]="10000" class="sidebar">
             <h3 style="align-content: normal">Menu</h3>
             <div>
                 <ul  class="" routerLinkActive="active">
@@ -28,9 +27,50 @@
                             <li class="nav-item">
                                 <a class="nav-link" routerLink="social">Social</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" routerLink="instrument">Instrument</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" routerLink="label">Label</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" routerLink="user-ext">User Ext</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" routerLink="valoracion-album">Valoracion Album</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" routerLink="valoracion-song">Valoracion Song</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" routerLink="valoracion-artist">Valoracion Artist</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" routerLink="valoracion-band">Valoracion Band</a>
+                            </li>
                         </p-accordionTab>
                         <p-accordionTab header="Administration">
-
+                            <li class="nav-item">
+                                <a class="nav-link" routerLink="user-management">User Management</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" routerLink="jhi-metrics">Metrics</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" routerLink="jhi-health">Health</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" routerLink="jhi-configuration">Configuration</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" routerLink="audits">Audits</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" routerLink="logs">Logs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" routerLink="docs">API</a>
+                            </li>
                         </p-accordionTab>
                         <p-accordionTab header="Language">
 

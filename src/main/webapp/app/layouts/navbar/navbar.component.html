@@ -27,7 +27,7 @@
                     </span>
                 </a>
                 <ul class="dropdown-menu" ngbDropdownMenu style="max-height:500px;overflow: scroll">
-                      
+
                    <hr/>
                    <span style="font-weight:bold">Input Components</span>
                    <hr/> <li uiSrefActive="active">
@@ -466,6 +466,7 @@
                 </ul>
             </li>
             <!-- jhipster-needle-add-element-to-menu - JHipster will add new menu items here -->
+            <!-- Entities
             <li *ngSwitchCase="true" ngbDropdown class="nav-item dropdown pointer" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
                 <a class="nav-link dropdown-toggle" ngbDropdownToggle href="javascript:void(0);" id="entity-menu">
                     <span>
@@ -560,10 +561,13 @@
                             <span jhiTranslate="global.menu.entities.valoracionBand">Valoracion Band</span>
                         </a>
                     </li>
-                    <!-- jhipster-needle-add-entity-to-menu - JHipster will add entities to the menu here -->
+                    ** jhipster-needle-add-entity-to-menu - JHipster will add entities to the menu here **
                 </ul>
             </li>
+            -->
+
             <li *jhiHasAnyAuthority="'ROLE_ADMIN'" ngbDropdown class="nav-item dropdown pointer" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                <!--
                 <a class="nav-link dropdown-toggle" ngbDropdownToggle href="javascript:void(0);" id="admin-menu">
                     <span>
                         <i class="fa fa-user-plus" aria-hidden="true"></i>
@@ -613,8 +617,10 @@
                             <span jhiTranslate="global.menu.admin.apidocs">API</span>
                         </a>
                     </li>
-                    <!-- jhipster-needle-add-element-to-admin-menu - JHipster will add entities to the admin menu here -->
+
+                    ** jhipster-needle-add-element-to-admin-menu - JHipster will add entities to the admin menu here **
                 </ul>
+                    -->
             </li>
             <li ngbDropdown class="nav-item dropdown pointer" *ngIf="languages">
                 <a class="nav-link dropdown-toggle" ngbDropdownToggle href="javascript:void(0);" id="languagesnavBarDropdown" *ngIf="languages.length > 1">
