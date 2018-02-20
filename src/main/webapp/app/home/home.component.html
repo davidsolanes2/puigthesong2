@@ -1,4 +1,4 @@
-<div class="row image-10">
+<div class="row">
     <div class="col-md-2">
         <p-sidebar [(visible)]="visibleSidebar1" [baseZIndex]="10000" class="sidebar">
             <h3 style="align-content: normal">Menu</h3>
@@ -87,19 +87,23 @@
     <div class="col-md-10 image-100">
         <div [ngSwitch]="isAuthenticated()">
             <div class="row">
-                <div class="col-md-4"></div>
-                <div class="col-md-4">
-                    <h3>Tus Conciertos</h3>
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <h2>Conciertos y Música al alcance de un solo "Click"</h2>
                 </div>
-                <div class="col-md-4"></div>
+                <div class="col-md-2"></div>
             </div>
             <br>
+            <h4>Conciertos Internacionales / Europeos / Nacionales</h4>
             <div class="row">
-                <div class="col-md-6">
-                    <p-galleria [images]="images" panelWidth="400" panelHeight="220"></p-galleria>
+                <div class="col-md-4">
+                    <p-galleria [images]="images" panelWidth="300" panelHeight="220"></p-galleria>
                 </div>
-                <div class="col-md-6">
-                    <p-galleria [images]="images" panelWidth="400" panelHeight="220"></p-galleria>
+                <div class="col-md-4">
+                    <p-galleria [images]="images" panelWidth="300" panelHeight="220"></p-galleria>
+                </div>
+                <div class="col-md-4">
+                    <p-galleria [images]="images" panelWidth="300" panelHeight="220"></p-galleria>
                 </div>
             </div>
             <br>
@@ -112,12 +116,15 @@
             </div>
             <br>
             <div class="row">
-                <div class="col-md-6">
-                    <p-galleria [images]="images" panelWidth="400" panelHeight="220"></p-galleria>
+                <div class="col-md-4">
+                    <p-galleria [images]="images1" panelWidth="300" panelHeight="220"></p-galleria>
                 </div>
-                <div class="col-md-6">
-                    <p-galleria [images]="images" panelWidth="400" panelHeight="220"></p-galleria>
+                <div class="col-md-4">
+                    <p-galleria [images]="images" panelWidth="300" panelHeight="220"></p-galleria>
                 </div>
+                <div class="col-md-4">
+                <p-galleria [images]="images" panelWidth="300" panelHeight="220"></p-galleria>
+            </div>
             </div>
         </div>
     </div>
